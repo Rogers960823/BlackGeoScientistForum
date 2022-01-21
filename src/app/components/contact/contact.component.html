@@ -1,0 +1,63 @@
+<div class="container">      
+
+    <link rel="stylesheet" type="text/css" href="contact.component.css">
+    <meta charset="utf=8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <div class="contact">
+            <div class="back-image">
+                 <img class="photo" src="../../../assets/contactus.jpg">
+            </div>
+
+            <div class="form-popup" id="myForm">
+                <form action="mailto:buthelezis@dv8techgroup.com" class="form-container">
+                  <h2>contact Us</h2>
+
+                  <label for="name"><b>First Name</b></label>
+                  <div class="pop">
+                    <input type="text" placeholder="Enter Name" name="name" required>
+                  </div>
+
+                  <label for="email"><b>Email</b></label>
+                 <div class="pop">
+                    <input type="email" placeholder="Enter Email" name="email" required>
+                 </div>
+
+                 <label id="labels" for="category"><b>Category</b></label>
+                 <div class="pop">
+                    <select id="category" name="category">
+                      <option value="education">Education & research</option>
+                      <option value="innovation">Innovation</option>
+                      <option value="professional">Professional Parctice</option>
+                    </select>
+                 </div>
+
+                 <label for="subject"><b>Subject</b></label>
+              <div class="pop">
+                <textarea class="text" id="subject" name="subject" placeholder="Write your message.."></textarea>
+              </div>
+              <div class="press">
+                  <button type="submit" class="btn"><b>Send Message</b></button>
+                </div> 
+                </form>
+              </div>
+              
+    </div>
+
+     <div class="map-container">
+        <div class="map">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3577.2999309724273!2d28.04095131453283!3d-26.284375173619875!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1e950f601401cf93%3A0xc05d29a0386fab89!2s19%20Thaba%20Bosigo%20Ave%2C%20Glenvista%2C%20Johannesburg%20South%2C%202091!5e0!3m2!1sen!2sza!4v1641796861716!5m2!1sen!2sza" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+        </div>
+    </div> 
+
+</div>
+
+<script>
+    function openForm() {
+      document.getElementById("myForm").style.display = "block";
+    }
+    
+    function closeForm() {
+      document.getElementById("myForm").style.display = "none";
+    }
+    </script>

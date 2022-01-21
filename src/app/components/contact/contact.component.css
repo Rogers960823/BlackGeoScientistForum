@@ -1,0 +1,201 @@
+.container{
+    display: flex;
+    padding-bottom: 2%;
+}
+
+.router{
+    padding-right: 0.5%;
+    width: 700px;
+    padding-left: 2%;
+}
+
+.back-image{
+    padding-right: 2%;
+    margin-right: 2%;
+}
+
+.map-container {
+    width: 100%;
+}
+
+.map-container .map{
+    width: 100%;
+}
+
+.map-container .map iframe{
+    width: 100%;
+    height: 500px;
+}
+.back-image{
+    width: 100%;
+}
+
+#gmap_canvas{
+    width: 850px;
+     height: 500px;
+}
+
+.photo{
+    height: 500px;
+     width: 720px;
+}
+
+.pop{
+    padding: 5px;
+    border-radius: 2rem;
+}
+
+input{
+    padding: 5px;
+    border-radius: 0.5rem;
+    text-align: center;
+    text-decoration: solid;
+}
+
+.form-popup{
+    position: absolute;
+    top: 2rem;
+    /* left: 180px; */
+    padding-right: 5%;
+    padding-left: 15%;
+    font-weight:400;
+    text-align: center;
+    color: #F5F5DC;
+    padding-top: 5%;
+    display: flex;
+}
+
+label{
+    text-decoration: solid;
+    font-family: "Times New Roman", Times, serif;
+}
+
+input{
+    border-radius: none;
+    border: none;
+}
+
+.press{
+    min-height: 10vh;
+}
+
+button{
+    border-radius: 0.2rem;
+    width: 150px;
+    height: 30px;
+    border: none;
+    text-decoration: solid;
+    color: white;
+    background-color: #01452c	;
+    opacity: 0.5rem;
+    cursor: pointer;
+    transition: 0.5s;
+    overflow: hidden;
+    position: relative;
+}
+
+button:hover{
+    /* border-radius: 0.1rem;
+    width: 150px;
+    border: none; */
+    /* text-decoration: solid; */
+    color: white;
+    background-color: #DEB887;
+    opacity: 0.5rem;
+    cursor: pointer;
+}
+
+button:nth-child(2):hover{
+    background: peachpuff;
+}
+
+button::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(90deg,transparent,#FFF8DC,transparent);
+    transition: 0.5s;
+}
+
+button:hover::before{
+    left: 100%;
+}
+
+.btn{
+    text-decoration: solid;
+}
+
+textarea{
+    height: 150px;
+    border: none;
+    border-radius: 5px 5px 5px;
+    font-family: "Times New Roman", Times, serif;
+}
+
+#category{
+    border: none;
+    border-radius: 5px 5px 5px;
+    font-family: "Times New Roman", Times, serif;
+    height: 30px;
+    width: 180px;
+    background-color: rgb(25, 82, 25);
+    color: white;
+}
+
+#category:hover{
+    background-color: black;
+}
+
+option{
+    text-decoration: white;
+    text-align: center;
+    color: white;
+}
+
+@media only screen and (max-width: 414px) {
+    .photo{
+        border: none;
+        display: block;
+        width: 396px;
+        height: 490px;
+    }
+
+    #gmap_canvas{
+        width: 100%;
+        height: 390px;
+    }
+
+    .container{
+        display: inline-block;
+        flex: none;
+        padding-top: 1rem;
+        position: relative;
+    }
+
+    .router{
+        padding-top: 1rem;
+        padding-left: 0.1rem;
+    }
+
+option{
+    width: 80px;
+}
+
+select{
+    height: 30px;
+    width: 180px;
+}
+
+    textarea{
+        height: 80px;
+        width: 180px;
+    }
+
+    .form-popup{
+        padding-left: 106px;
+        position: absolute;
+    }
+}

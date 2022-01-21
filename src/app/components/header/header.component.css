@@ -1,0 +1,266 @@
+.header{
+    display: inline-block;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* padding: 1rem; */
+    /* margin-bottom: 20px;
+    margin-bottom: 20%; */
+    width: 100%;
+}
+
+/* .navbar .lastlink a{
+    display: none;
+} */
+
+a{
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+}
+
+.header .logo{
+  font-size: 1.5rem;
+  text-decoration: none;
+  color: black;
+  display: flex;
+  align-items: center;
+}
+
+.header .logo span{
+    color : green;
+}
+
+.header .logo span:hover{
+    color: grey;
+}
+
+.header .logo img{
+    width: 50px;
+}
+
+
+.header img:hover{
+    color: green;
+}
+
+.header .navbar a{
+    padding-left: .5rem;
+    padding: space-between;
+    text-align: justify;
+    cursor: pointer;
+}
+
+.icon{
+    cursor: pointer;
+}
+
+.header .navbar a:hover{
+    color : #787878;
+}
+
+.header .icon i{
+    font-size: 2rem;
+}
+
+.navbar a{
+    clear: right;
+    text-decoration: none;
+    color: green;
+    margin: 0 12px;
+    line-height: 20px;
+}
+
+.header .icon i:hover{
+    color: red;
+}
+
+a .menu-btn {
+    padding-left: .8rem;
+    padding: space-between;
+    text-align: justify;
+    cursor: pointer;
+    text-decoration: none;
+ }
+ .dropdown-menu {
+    position: relative;
+    display: inline-block;
+ }
+ .menu-content {
+    display: none;
+    position: absolute;
+    background-color: #fff;
+    min-width: 160px;
+    z-index: 1;
+ }
+ .links,.links-hidden{
+    display: inline-block;
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    font-size: 18px;
+ }
+ .links-hidden{
+    display: block;
+ }
+
+ .menu-content a{
+     color: #787878;
+ }
+
+.navbar .menu-content a:hover{
+    color: green;
+}
+
+ 
+ .links{
+    display: inline-block;
+ }
+ .dropdown-menu:hover .menu-content {
+    display: block;
+ }
+
+label{
+    margin: 0 40px 0 0;
+    font-size: 26px;
+    line-height: 70px;
+    display: none;
+    width: 30px;
+    float: right;
+}
+
+.topNav{
+    
+    text-align: right;
+    padding-right: 5rem;
+    /* height: 50px;
+    line-height: 50px; */
+}
+
+#toggle{
+    display: none;
+}
+
+button{
+    border: none;
+    border-radius: 5px 5px 5px;
+    width: 100px;
+    height: 30px;
+    color: white;
+    background-color: #556B2F;
+    cursor: pointer;
+}
+
+form{
+     padding-right: 0px;
+}
+
+img{
+    height: 50px;
+    width: 50px;
+}
+
+@media only screen and ( max-width: 414px){
+    label{
+        display: block;
+        cursor: pointer;
+        margin: 0 0px 0 0;
+        font-size: 26px;
+        line-height: 70px;
+        width: 30px;
+        float: right;
+        color: green;
+    }
+    
+    .navbar {
+         float: none;
+        display: block;
+        text-align: left;
+        content: '/2630';
+        text-align: center;
+        width: 100%;
+        display: none;
+        margin: 0 0px;
+      } 
+
+      .header .navbar a{
+        padding-left: .2rem;
+        padding: space-between;
+        text-align: justify;
+        cursor: pointer;
+    }
+
+      .navbar a{
+          display: block;
+          border-bottom: 0.3px solid #EAEAEB;
+          margin: 0 0px;
+          line-height: 20px;
+      }
+      
+      #toggle:checked + .navbar{
+       display: block;
+       line-height: 30px;
+       background-color: white;
+       -webkit-transition: .4s;
+       transition: .4s;
+      }
+
+      #toggle:checked + .logoIcon{
+         display: block;
+         position: relative;
+      }
+
+      .header{
+          display: flex;
+          position: relative;
+      }
+
+      .logoIcon{
+          display: block;
+          position: -webkit-sticky;
+          position: sticky;
+          top: 0;
+      }
+
+      .logo a{
+        position: absolute;
+      }
+
+      .topNav{
+          width: 100%;
+          position: relative;
+          padding-right: 0.5rem;
+      }
+
+      .logospace{
+          display: flex;
+      }
+      
+      button{
+          display: none;
+      }
+      
+      .topNav{
+        padding-right: 0rem;
+      }
+
+      a .menu-btn {
+        padding-left: 0rem;
+        margin-right: 5rem;
+        padding: 0vmin;
+        text-align: justify;
+        cursor: pointer;
+        text-decoration: none;
+     }
+
+     .dropdown-menu {
+        display: block;
+     }
+     
+     .header .navbar a{
+        padding-left: 0rem;
+        padding: 0px;
+        text-align:right;
+        cursor: pointer;
+    }
+ }

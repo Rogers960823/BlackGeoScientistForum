@@ -1,0 +1,132 @@
+.footer .logo{
+    font-size: 2rem;
+    text-decoration: none;
+    color: black;
+  }
+
+  .footer .logo img{
+    width: 30px;
+}
+
+h3{
+    color: white;
+    text-decoration: none;
+    padding-bottom: 0.5%;
+    padding-left: 1%;
+}
+
+i{
+    padding-bottom: 1%;
+    color: white;
+}
+
+.contact{
+    color: white;
+    width: 12rem;
+    padding-left: 2%;
+}
+
+.footer .grid{
+    color: white;
+    padding-left: 25%;
+}
+
+.footer .about .info{
+    color: white;
+    justify-content: center;
+    border-top-color:white;
+    padding-left: 5%;
+    border-bottom: solid;
+}
+
+.footer {
+    display: grid;
+    /* grid-template-rows: 0.8fr;
+    grid-template-columns: 1fr minmax(0, 500px) 1fr; */
+    display: flex;
+    background-color: black;
+    width: 100%;
+  }
+
+  .bottombar{
+    padding-left: 10%;
+    background-color: grey;
+    color: white;
+    justify-content: center;
+    background: cover;
+    padding-top: 0.5%;
+    padding-bottom: 0.5%;
+}
+
+.icon{
+    display: flex;
+    padding-bottom: 2%;
+}
+
+.detail{
+    color: white;
+    padding-left: 1%;
+    display: inline;
+    position: relative;
+}
+
+@media only screen and (max-width:414px) {
+   .grid{
+        color: white;
+        padding-left: 3%;
+        margin-left: 3%;
+        right: 5rem;
+    }
+
+    footer .contact i{
+        color: white;
+        display: flex;
+        width: 2rem;
+        padding-left: 3%;
+    }
+
+    .footer .grid{
+        color: white;
+        padding-left: 0.5%;
+    }
+
+    .footer {
+        display: grid;
+        /* grid-template-rows: 0.8fr;
+        grid-template-columns: 1fr minmax(0, 500px) 1fr; */
+        display: flex;
+        background-color: black;
+        width: 100%;
+      }
+
+      .contact{
+        color: white;
+        /* display: flex; */
+        /* width: 100%; */
+        padding-left: 2%;
+        margin-right: 0.5rem;
+    }
+
+    .footer{
+        /* right: 1rem; */
+        /* height: 250px; */
+        /* position: absolute; */
+        width: 100%;
+    }
+
+    .icon{
+        display: flex;
+        padding-bottom: 4%;
+    }
+
+    img{
+        height: 30px;
+        /* width: 30px; */
+        width: 20%;
+    }
+
+    .bottombar{
+        padding-left: 3.5%;
+        padding-right: 3.5%;
+    }
+}
